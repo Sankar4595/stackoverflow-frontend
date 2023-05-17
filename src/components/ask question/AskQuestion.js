@@ -15,7 +15,7 @@ const AskQuestion = () => {
   const [tags, setTags] = useState([]);
   const navigate = useNavigate();
 
-  const token = sessionStorage.getItem("token");
+  const token = localStorage.getItem("token");
   useEffect(() => {
     if (!token) {
       navigate("/login");
